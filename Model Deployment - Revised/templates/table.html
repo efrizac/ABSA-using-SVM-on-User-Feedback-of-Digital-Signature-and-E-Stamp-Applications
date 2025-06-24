@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Aspect and Sentiment Prediction Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='file-page.css') }}">
+</head>
+ <body>
+    <div class="container mt-5">
+        <h1>Aspect and Sentiment Prediction Result</h1>
+        {{ table|safe }}
+        <a href="/" class="btn btn-primary mt-3">Back</a>
+    </div>
+</body> -->
+<!-- <body class="container">
+    <h1 class="mt-4">Results Overview</h1>
+
+     Distribution Chart -->
+    <!-- <div id="distribution-chart-section">
+        <h2>Distribution Chart</h2>
+        {{ distribution_chart_html|safe }}
+    </div> -->
+
+    <!-- WordCloud Section -->
+    <!-- <div id="wordcloud-section">
+        <h2>WordCloud</h2>
+        {{ wordcloud_html|safe }}
+    </div> --> 
+
+    <!-- Table Section -->
+    <!-- <h2>Classification Results</h2>
+    <div id="table-section">
+        {{ table_html|safe }}
+    </div> -->
+    <!-- <div id="result">
+        <h1>Aspect and Sentiment Prediction Result</h1>
+        {{ table|safe }}
+        <a href="/" class="btn btn-primary mt-3">Back</a>
+    </div>
+</body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='file-page.css') }}">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Hasil Analisis</h1>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs" id="resultTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">
+                    Overview
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detail" type="button" role="tab" aria-controls="detail" aria-selected="false">
+                    Detail
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content mt-4" id="resultTabsContent">
+            <!-- Overview Tab -->
+            <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                <div id="year-based-distribution-chart-section">
+                    <h3>Year Based Distribution Chart</h3>
+                    {{ year_based_distribution_chart_html|safe }}
+                </div>
+                <div id="distribution-chart-section">
+                    <h3>Distribution Chart</h3>
+                    {{ distribution_chart_html|safe }}
+                </div>
+                <hr>
+                <!-- <h3>WordCloud</h3> -->
+                <div id="wordcloud-section">
+                    {{ wordcloud_html|safe }}
+                </div>
+            </div>
+
+            <!-- Detail Tab -->
+            <div class="tab-pane fade" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+                <div class="table-responsive">
+                <h3>Detail Data</h3>
+                {{ table|safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="'en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Analisis Sentimen Berbasis Aspek</title>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='main-page.css') }}">
+    </head>
+    <body>
+        <h1>Analisis Sentimen Berbasis Aspek</h1>
+        <p>Pada studi kasus aplikasi tanda tangan digital dan e-Meterai</p>
+        <!-- <form action="/predict" method="POST">
+            <label for="text">Input text for prediction</label>
+            <input type="text" id="text" name="text">
+            <button type="'submit">Submit</button>
+        </form> -->
+        <div class="container">
+            <form action="/predict" method="POST">
+                <div class="mb-3">
+                    <label for="text" class="form-label">Input text for prediction</label><br>
+                    <textarea id="text" name="text" class="form-control" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Text</button>
+            </form>
+            
+
+            <br>
+
+            <!-- Form for file upload -->
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <label for="file">Upload file for prediction:</label><br>
+                <input type="file" id="file" name="file" accept=".txt, .csv"><br>
+                <button type="submit">Submit File</button>
+            </form>
+        </div>
+    </body>
+</html>

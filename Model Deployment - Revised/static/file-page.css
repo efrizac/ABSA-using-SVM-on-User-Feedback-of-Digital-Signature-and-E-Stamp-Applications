@@ -1,0 +1,172 @@
+/* Gaya untuk seluruh halaman */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ebebeb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk container utama */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk heading utama */
+h1, h2 {
+    text-align: center;
+    color: #242331;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk distribution chart section */
+#distribution-chart-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    border: 1px solid #d1e7dd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk WordCloud section */
+#wordcloud-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    border: 1px solid #e3d1e7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#year-based-distribution-chart-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    border: 1px solid #e3d1e7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk tabel hasil */
+#result {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#year-based-distribution-chart-section img, #distribution-chart-section img, #wordcloud-section img {
+    max-width: 100%; /* Pastikan elemen tidak melebihi lebar container */
+    height: auto; /* Pertahankan rasio aspek */
+    display: block; /* Hindari margin horizontal yang tidak diinginkan */
+    margin: 0 auto; /* Pusatkan elemen secara horizontal */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #709775;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Gaya untuk tombol kembali */
+a.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #709775;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #709775;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk tab navigasi */
+.nav-tabs .nav-link {
+    font-weight: bold;
+    color: #2c3e50;
+    border-radius: 5px 5px 0 0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #709775;
+    color: #ffffff;
+    border: 1px solid #709775;
+}
+
+/* Gaya untuk konten tab */
+.tab-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk tabel responsif */
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-responsive th, .table-responsive td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-responsive th {
+    background-color: #709775;
+    color: #ffffff;
+}
+
+.table-responsive tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    a.btn {
+        width: 100%;
+        display: block;
+    }
+}

@@ -1,0 +1,72 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+    color: #242331;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mengatur gaya untuk header utama */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+/* Gaya untuk paragraf */
+p {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+textarea {
+    width: 500px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+button {
+    font-family: Arial;    
+    background-color: #709775;
+    color: #ffff;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+btn:hover {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    text-align: left;
+}
+
+input[type="file"] {
+    display: block; /* Pastikan elemen berada di baris sendiri */
+    margin: 10px 0; /* Ruang atas dan bawah */
+    padding: 8px; /* Ruang di dalam elemen */
+    /* border: 1px solid #ccc; Border abu-abu */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 16px; /* Ukuran teks */
+    /* background-color: #f9f9f9; Warna latar belakang */
+    cursor: pointer; /* Ubah kursor menjadi pointer */
+}

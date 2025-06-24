@@ -1,0 +1,174 @@
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2980b9;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #2980b9;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #3498db;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+li strong {
+    color: #e74c3c;
+}
+
+li span {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.back-btn-container {
+    margin-top: 20px;
+} */
+ /* Gaya untuk seluruh halaman */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ebebeb;
+    color: #242331;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk container utama */
+.container {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk judul utama */
+h1 {
+    color: #242331;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Gaya untuk teks input */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #242331;
+}
+
+/* Gaya untuk bagian "Relevan Aspek dan Sentimen" */
+h3 {
+    font-size: 1.5rem;
+    color: #709775;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Gaya untuk daftar aspek dan sentimen */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #f8f8f8;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+/* Gaya untuk sentimen negatif dan positif */
+li strong {
+    font-weight: bold;
+    /* color: #e74c3c; Default untuk sentimen negatif */
+    color: #242331; /* Warna untuk sentimen positif */
+}
+
+li.positive strong {
+    color: #2ecc71; /* Warna untuk sentimen positif */
+}
+
+/* Tombol kembali */
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #709775;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #709775;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li strong {
+        margin-top: 5px;
+    }
+}
